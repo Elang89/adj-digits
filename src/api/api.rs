@@ -54,9 +54,7 @@ pub fn init(value: String, limit: usize) -> () {
 
 #[cfg(test)]
 mod tests {
-    use crate::api::api::multiply;
-
-    use super::{check_input, find_number};
+    use crate::api::api::{check_input, find_number, multiply};
 
     #[test]
     fn test_check_input_true() -> () {
