@@ -1,0 +1,19 @@
+name: Lints
+
+on: [push, pull]
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+    
+      - name: Update Rust
+        run: |
+          rustup update
+          rustup component add clippy
+      
+      - name: Lint
+        run: |
+          cargo fmt -- --check
+          cargo clippy -- -D warnings
