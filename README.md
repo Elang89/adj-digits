@@ -12,6 +12,8 @@ To run tests please run the following command:
 
 `cargo test`
 
+Additionally, tests are run on github actions. Please check the jobs from the workflows specified in `lint.yml` and `test.yml`.
+
 ## Choice of Language
 
 I chose to use Rust for this project because I wanted to try something different. Python is the language I know best, but I also wanted to show case my skills in other languages, in particular Rust, especially because it has a steep learning curve. I believe this demonstrates that I am capable of learning other languages and technologies, even if they are not listed on my CV.
